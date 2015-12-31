@@ -1,0 +1,1843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ac">
+      <UniqueIdentifier>{964f76d3-4e46-4ee1-b35d-5608ecece13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ac\dynobj">
+      <UniqueIdentifier>{844de8e0-8773-4de0-9e38-eb8301f13225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ac\statobj">
+      <UniqueIdentifier>{8963d95f-98a5-4baf-9c5f-83ae3aa2cdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gfx">
+      <UniqueIdentifier>{5b52a5f8-a30c-4772-8c3b-a4e8ce4b2529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{88a20824-3894-4069-9de8-3f758fd7438c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\script">
+      <UniqueIdentifier>{dbd6cf16-69fc-421b-9ee8-4de4b746e90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\media">
+      <UniqueIdentifier>{c51b6bd1-4db3-429a-bdc5-e1dc89aee1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\media\audio">
+      <UniqueIdentifier>{eb304e9c-d81f-4af6-8c4e-79cf6d5c7a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\media\video">
+      <UniqueIdentifier>{dfec42d1-28e3-45c2-8147-500627776540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{27d39988-3f13-445c-b3bf-27a6fbf8da82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{8ba5eb33-aed8-47bf-be71-1c6061e91338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform">
+      <UniqueIdentifier>{6864fbd8-6e56-4504-9555-d5a1bb4fd01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\base">
+      <UniqueIdentifier>{9c7aabc3-631e-4436-aeab-49cb90194dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\windows">
+      <UniqueIdentifier>{73738d2f-03fd-4981-b95e-fd32dcad2f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugin">
+      <UniqueIdentifier>{a094d668-0f3f-46ef-8599-799706d944bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\setup">
+      <UniqueIdentifier>{b2e1bd6d-162e-48a3-9728-3dc157407f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\device">
+      <UniqueIdentifier>{7cbf6cbb-0600-480a-945c-03d0a6af6d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\font">
+      <UniqueIdentifier>{b25b41b7-7614-4912-b9ed-dba094ec0d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{8aba3805-26fa-4217-b1af-c755f4f0aaf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ac">
+      <UniqueIdentifier>{6b3f5a97-b00c-43f0-a841-2b751381d7e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ac\dynobj">
+      <UniqueIdentifier>{1fa97e71-7aa5-4f7f-af09-410b9dc73b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ac\statobj">
+      <UniqueIdentifier>{a4ab7ac9-1161-4962-8e12-3ef29847240d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugin">
+      <UniqueIdentifier>{36244130-99f9-4494-bb31-79de0cf96b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx">
+      <UniqueIdentifier>{5bf964e5-1ce6-45a3-b2da-abfdefbde944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\script">
+      <UniqueIdentifier>{a668213e-110a-46c8-9145-f6378d410dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform">
+      <UniqueIdentifier>{4fb41fe5-0eb6-487d-abca-4ffba650acc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform\base">
+      <UniqueIdentifier>{39b0ef0c-0756-400b-93ba-81e84d1c99d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\media">
+      <UniqueIdentifier>{002e6e04-7d7c-40a1-a60a-8ceab7aa1b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\media\audio">
+      <UniqueIdentifier>{48e1d7d3-2a9a-4cf8-a165-3b3363b9fb3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\media\video">
+      <UniqueIdentifier>{8b99c4fc-3495-4bbd-9790-333a79278ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\debug">
+      <UniqueIdentifier>{e27e90ce-de61-4b53-b2ce-8a9a781cbf69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\main">
+      <UniqueIdentifier>{e1fcb92c-99e3-4d54-af35-8e2ec9057fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{6058f408-a036-47c9-a596-a98b48affb93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\device">
+      <UniqueIdentifier>{e6b02640-9776-4360-a1cc-c24487172b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test">
+      <UniqueIdentifier>{53a711f1-060d-4408-b8f3-cc497f3ebce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{fbe70eaf-b621-41a8-bf61-506a8745a931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{cb67d819-f775-48c1-945a-9a1d574c2b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources">
+      <UniqueIdentifier>{e9785608-45fa-4185-83c5-aebf947d1624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\AllegroPatches">
+      <UniqueIdentifier>{2b154ab8-8bbb-4f9a-8086-9ab0dcf699f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\almp3">
+      <UniqueIdentifier>{d5dbd533-3cf1-4910-8d75-10d9409cf6fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\alogg">
+      <UniqueIdentifier>{0e25b192-318f-4c70-b28a-9cebd7241d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\apeg">
+      <UniqueIdentifier>{19efb540-b646-4a8c-b7f6-618590e7baec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\DUMB">
+      <UniqueIdentifier>{61060a5d-2278-445c-809f-e158e3834090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\Hq2x">
+      <UniqueIdentifier>{a4b73053-8616-4371-8e4a-35fd7d83046d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library Sources\libcda">
+      <UniqueIdentifier>{e7037eef-b4e2-43e4-bb54-773d6ae3fe0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header Files">
+      <UniqueIdentifier>{2674f68d-1873-4dce-a637-ebf7a3eafca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header Files\ac">
+      <UniqueIdentifier>{d8a77f58-19b8-45ff-b80a-d32036507581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header Files\ac\dynobj">
+      <UniqueIdentifier>{4ed7f6f0-85d7-4359-ab87-d938f79a5db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header Files\script">
+      <UniqueIdentifier>{4e70c03d-b558-49cb-a3ca-5e8fe6060998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header Files\util">
+      <UniqueIdentifier>{2389cd12-fe0f-4c06-9b05-9d692dfcd29b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Engine\ac\audiochannel.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\audioclip.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\button.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\cdaudio.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\character.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\characterextras.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\characterinfo.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\datetime.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dialog.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dialogoptionsrendering.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dialogtopic.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\display.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\draw.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\drawingsurface.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynamicsprite.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\event.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\file.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\game.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\gamesetup.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\gamestate.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_api.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_audio.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_button.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_character.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_datetime.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_debug.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_dialog.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_display.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_drawingsurface.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_dynamicsprite.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_file.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_game.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_gui.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_hotspot.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_inventoryitem.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_invwindow.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_label.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_listbox.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_mouse.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_object.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_overlay.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_palette.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_parser.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\plugin\global_plugin.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_record.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_region.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_room.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_screen.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_slider.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_string.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_textbox.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_timer.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_translation.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_video.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_viewframe.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_viewport.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_walkablearea.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\global_walkbehind.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\gui.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\guicontrol.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\guiinv.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\hotspot.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\interfacebutton.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\interfaceelement.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\inventoryitem.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\inventoryiteminfo.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\invwindow.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\label.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\listbox.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\math.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\mouse.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\movelist.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\object.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\overlay.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\parser.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\path.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\properties.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\record.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\region.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\richgamemedia.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\room.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\room_engine.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\roomobject.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\roomstatus.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\route_finder.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\screen.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\screenoverlay.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\slider.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\speech.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\sprite.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\spritecache_engine.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\string.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\system.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\textbox.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\timer.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\translation.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\tree_map.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\viewframe.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\viewport.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\walkablearea.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\walkbehind.cpp">
+      <Filter>Source Files\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_agsdynamicobject.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_audiochannel.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_audioclip.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_character.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_dialog.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_dynamicarray.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_dynamicobject.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_gui.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_guiobject.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_hotspot.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_inventory.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_object.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_region.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\cc_serializer.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\managedobjectpool.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptdatetime.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptdialogoptionsrendering.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptdrawingsurface.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptdynamicsprite.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptfile.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptoverlay.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptstring.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\dynobj\scriptviewframe.cpp">
+      <Filter>Source Files\ac\dynobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\statobj\agsstaticobject.cpp">
+      <Filter>Source Files\ac\statobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\ac\statobj\staticarray.cpp">
+      <Filter>Source Files\ac\statobj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\windows\gfx\ali3dd3d.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\ali3dogl.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\ali3dsw.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\blender.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\color_engine.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfx_util.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_aad3d.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_allegro.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_d3d.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_hq2x.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_hq3x.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_scaling.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gfx\gfxfilter_scalingallegro.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\animatingguibutton.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\cscidialog.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\gui_engine.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\guidialog.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\mylabel.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\mylistbox.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\mypushbutton.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\mytextbox.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\gui\newcontrol.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\cc_instance.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\executingscript.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\exports.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\runtimescriptvalue.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\script.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\script_api.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\script_engine.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\script_runtime.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\script\systemimports.cpp">
+      <Filter>Source Files\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\ambientsound.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\audio.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mydumbmod.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_myjgmod.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mymidi.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mymp3.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_myogg.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mystaticmp3.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mystaticogg.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\clip_mywave.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\queuedaudioitem.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\sound.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\soundcache.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\audio\soundclip.cpp">
+      <Filter>Source Files\media\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\windows\media\video\acwavi.cpp">
+      <Filter>Source Files\media\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\windows\media\video\acwavi3d.cpp">
+      <Filter>Source Files\media\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\media\video\video.cpp">
+      <Filter>Source Files\media\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\debug\consoleoutputtarget.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\debug\debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\debug\filebasedagsdebugger.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\debug\logfile.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\windows\debug\namedpipesagsdebugger.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\config.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\engine.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\game_file.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\game_run.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\game_start.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\graphics_mode.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\main.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\quit.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\udpate.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\version.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\base\agsplatformdriver.cpp">
+      <Filter>Source Files\platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\platform\windows\acplwin.cpp">
+      <Filter>Source Files\platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\plugin\agsplugin.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\plugin\pluginobjectreader.cpp">
+      <Filter>Source Files\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\setup\acwsetup.cpp">
+      <Filter>Source Files\setup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\device\mousew32.cpp">
+      <Filter>Source Files\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\font\fonts_engine.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_all.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_file.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_gfx.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_inifile.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_sprintf.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_string.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\test\test_version.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\main\minidump.cpp">
+      <Filter>Header Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\afile.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\c\cstretch.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\win\wkeybd.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\win\wmouse.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\win\wwnd.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3\almp3.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\common.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\dct64_i386.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\decode_i386.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\interface.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\layer2.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\layer3.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\almp3-2.0.5\decoder\tabinit.c">
+      <Filter>Library Sources\almp3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\alogg\alogg.c">
+      <Filter>Library Sources\alogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\audio\aaudio.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\adisplay.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\getbits.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\getblk.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\gethdr.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\getpic.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\idct.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\motion.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\mpeg1dec.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\audio\mpg123.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\ogg.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\apeg-1.2.1\recon.c">
+      <Filter>Library Sources\apeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\ALPLAY.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\ATEXIT.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\CLICKREM.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATDUH.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATIT.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATMOD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATS3M.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATUNLD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\DATXM.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\DUHLEN.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\DUMBFILE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITLOAD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITMISC.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITORDER.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITREAD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITRENDER.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\ITUNLOAD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\LOADDUH.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\LOADMOD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\LOADS3M.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\LOADXM.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\MAKEDUH.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\MEMFILE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\ALLEGRO\PACKFILE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\RAWSIG.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\READDUH.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\READMOD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\READS3M.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\READXM.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\REGISTER.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\RENDDUH.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\RENDSIG.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\RESAMPLE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\SAMPBUF.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\SILENCE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\HELPERS\STDFILE.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\CORE\UNLOAD.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\dumb-0.9.2\IT\XMEFFECT.C">
+      <Filter>Library Sources\DUMB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\hq2x\hq2x3x.cpp">
+      <Filter>Library Sources\Hq2x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\libcda-0.5\windows.c">
+      <Filter>Library Sources\libcda</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Engine\ac\audiochannel.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\audioclip.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\button.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\cdaudio.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\character.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\charactercache.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\characterextras.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\datetime.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dialog.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dialogoptionsrendering.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\display.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\draw.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\drawingsurface.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynamicsprite.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\event.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\file.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\game.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\gamesetup.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\gamestate.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_audio.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_button.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_character.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_datetime.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_debug.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_dialog.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_display.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_drawingsurface.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_dynamicsprite.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_file.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_game.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_gui.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_hotspot.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_inventoryitem.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_invwindow.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_label.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_listbox.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_mouse.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_object.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_overlay.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_palette.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_parser.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_plugin.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_record.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_region.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_room.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_screen.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_slider.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_string.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_textbox.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_timer.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_translation.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_video.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_viewframe.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_viewport.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_walkablearea.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\global_walkbehind.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\gui.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\guicontrol.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\hotspot.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\inventoryitem.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\invwindow.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\keycode.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\label.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\lipsync.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\listbox.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\math.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\mouse.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\movelist.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\object.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\objectcache.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\overlay.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\parser.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\path.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\properties.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\record.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\region.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\richgamemedia.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\room.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\roomobject.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\roomstatus.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\route_finder.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\runtime_defines.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\screen.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\screenoverlay.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\slider.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\speech.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\sprite.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\spritelistentry.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\string.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\system.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\textbox.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\timer.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\topbarsettings.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\translation.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\tree_map.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\viewframe.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\viewport.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\walkablearea.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\walkbehind.h">
+      <Filter>Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\all_dynamicclasses.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\all_scriptclasses.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_agsdynamicobject.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_audiochannel.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_audioclip.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_character.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_dialog.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_dynamicarray.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_dynamicobject.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_gui.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_guiobject.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_hotspot.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_inventory.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_object.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_region.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\cc_serializer.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\managedobjectpool.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptaudiochannel.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptdatetime.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptdialog.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptdialogoptionsrendering.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptdrawingsurface.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptdynamicsprite.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptfile.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptgui.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scripthotspot.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptinvitem.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptmouse.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptobject.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptoverlay.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptregion.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptstring.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptsystem.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\dynobj\scriptviewframe.h">
+      <Filter>Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\statobj\agsstaticobject.h">
+      <Filter>Header Files\ac\statobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\statobj\staticarray.h">
+      <Filter>Header Files\ac\statobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\ac\statobj\staticobject.h">
+      <Filter>Header Files\ac\statobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\plugin\agsplugin.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\plugin\pluginobjectreader.h">
+      <Filter>Header Files\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\ali3d.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\blender.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\ddb.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfx_util.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_aad3d.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_allegro.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_d3d.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_hq2x.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_hq3x.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_scaling.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilter_scalingallegro.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilterdefines.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxfilterhelpers.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\gfxmodelist.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\graphicsdriver.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gfx\hq2x3x.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\cc_instance.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\executingscript.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\exports.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\nonblockingscriptfunction.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\runtimescriptvalue.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\script.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\script_api.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\script_runtime.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\script\systemimports.h">
+      <Filter>Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\platform\base\agsplatformdriver.h">
+      <Filter>Header Files\platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\platform\base\override_defines.h">
+      <Filter>Header Files\platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\ambientsound.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\audio.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\audiodefines.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\audiointernaldefs.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mydumbmod.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_myjgmod.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mymidi.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mymp3.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_myogg.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mystaticmp3.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mystaticogg.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\clip_mywave.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\queuedaudioitem.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\sound.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\soundcache.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\audio\soundclip.h">
+      <Filter>Header Files\media\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\video\video.h">
+      <Filter>Header Files\media\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\media\video\VMR9Graph.h">
+      <Filter>Header Files\media\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\agseditordebugger.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\consoleoutputtarget.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\debug_log.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\debugger.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\dummyagsdebugger.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\filebasedagsdebugger.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\debug\logfile.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\platform\windows\debug\namedpipesagsdebugger.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\config.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\engine.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\game_file.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\game_run.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\game_start.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\graphics_mode.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\main.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\main_allegro.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\maindefines_ex.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\mainheader.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\quit.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\update.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\main\version.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\animatingguibutton.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\cscidialog.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\gui.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\guidialog.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\guidialogdefines.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\guidialoginternaldefs.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\mycontrols.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\mylabel.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\mylistbox.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\mypushbutton.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\mytextbox.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\gui\newcontrol.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\device\mousew32.h">
+      <Filter>Header Files\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\test\test_all.h">
+      <Filter>Header Files\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\test\test_file.h">
+      <Filter>Header Files\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\test\test_string.h">
+      <Filter>Header Files\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\library.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\library_windows.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex_base.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex_psp.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex_pthread.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex_wii.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\mutex_windows.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\thread.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\thread_psp.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\thread_pthread.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\util\thread_windows.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine\resource\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\animationstruct.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\audiocliptype.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\characterinfo.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\common.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\common_defines.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\customproperties.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\dialogtopic.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\gamesetupstruct.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\gamesetupstructbase.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\gamestructdefines.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\interaction.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\interfacebutton.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\interfaceelement.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\inventoryiteminfo.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\messageinfo.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\mousecursor.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\oldgamesetupstruct.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\point.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\roomstruct.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\spritecache.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\view.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\wordsdictionary.h">
+      <Filter>Common Header Files\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ac\dynobj\scriptaudioclip.h">
+      <Filter>Common Header Files\ac\dynobj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\cc_error.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\cc_instance.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\cc_options.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\cc_script.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\cc_treemap.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\script\script_common.h">
+      <Filter>Common Header Files\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\util\compress.h">
+      <Filter>Common Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\util\lzw.h">
+      <Filter>Common Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\util\misc.h">
+      <Filter>Common Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\util\string_utils.h">
+      <Filter>Common Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\util\wgt2allg.h">
+      <Filter>Common Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Engine\resource\DefaultGDF.gdf.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Engine\resource\game-1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Engine\resource\tintshader.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\Engine\resource\tintshaderLegacy.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Engine\resource\version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Windows\lib\alfont_mt.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\alleg_s_crt.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\ddraw.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\dinput.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\dsound.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\dxguid.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\ogg_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\theora_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\vorbis_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\Windows\lib\vorbisfile_static.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
