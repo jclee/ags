@@ -8,6 +8,8 @@
 *.csproj.user
 *.idc
 *.ncb
+*.opendb
+*.sdf
 *.suo
 *.vcproj.*.user
 
