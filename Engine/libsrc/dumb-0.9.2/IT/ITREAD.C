@@ -241,7 +241,7 @@ static int decompress16(DUMBFILE *f, sample_t *left, sample_t *right, int len, i
 			if (bitwidth < 7) { //Method 1:
 				if (val == (1 << (bitwidth - 1))) {
 					val = readbits(4) + 1;
-					bitwidth = (val < bitwidth) ? val : val + 1;
+					bitwidth = (val < bitwidth) ? (byte) val : (byte) val + 1;
 					continue;
 				}
 			}
@@ -250,7 +250,7 @@ static int decompress16(DUMBFILE *f, sample_t *left, sample_t *right, int len, i
 
 				if (val > border && val <= (border + 16)) {
 					val -= border;
-					bitwidth = val < bitwidth ? val : val + 1;
+					bitwidth = val < bitwidth ? (byte) val : (byte) val + 1;
 					continue;
 				}
 			}

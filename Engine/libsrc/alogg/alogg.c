@@ -392,8 +392,10 @@ int alogg_poll_ogg(ALOGG_OGG *ogg) {
   void *audiobuf;
   char *audiobuf_p;
   int i, size_done;
+#ifdef USE_TREMOR
   unsigned short* data_array;
   int x;
+#endif
 
   /* continue only if we are playing it */
   if (!alogg_is_playing_ogg(ogg))
@@ -576,8 +578,10 @@ SAMPLE *alogg_create_sample_from_ogg(ALOGG_OGG *ogg) {
   SAMPLE *sample;
   char *data;
   int i, sample_len_bytes, sample_len, size_done, done;
+#ifdef USE_TREMOR
   unsigned short* data_array;
   int x;
+#endif
 
   /* first we need to calculate the len of the sample in bytes */
   sample_len = ov_pcm_total(&(ogg->vf), -1);
@@ -952,8 +956,10 @@ int alogg_poll_oggstream(ALOGG_OGGSTREAM *ogg) {
   char *audiobuf_p;
   int i, size_done;
   int last_block;
+#ifdef USE_TREMOR
   unsigned short* data_array;
   int x;
+#endif
 
   /* continue only if we are playing it */
   if (!alogg_is_playing_oggstream(ogg))

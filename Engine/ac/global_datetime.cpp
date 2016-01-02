@@ -35,5 +35,5 @@ int sc_GetTime(int whatti) {
 }
 
 int GetRawTime () {
-    return time(NULL);
+    return (int) time(NULL);
 }

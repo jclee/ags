@@ -70,9 +70,9 @@ int DialogOptionsRendering_GetHasAlphaChannel(ScriptDialogOptionsRendering *dlgO
     return dlgOptRender->hasAlphaChannel;
 }
 
-void DialogOptionsRendering_SetHasAlphaChannel(ScriptDialogOptionsRendering *dlgOptRender, bool hasAlphaChannel)
+void DialogOptionsRendering_SetHasAlphaChannel(ScriptDialogOptionsRendering *dlgOptRender, int hasAlphaChannel)
 {
-    dlgOptRender->hasAlphaChannel = hasAlphaChannel;
+    dlgOptRender->hasAlphaChannel = (hasAlphaChannel != 0);
 }
 
 int DialogOptionsRendering_GetParserTextboxX(ScriptDialogOptionsRendering *dlgOptRender)

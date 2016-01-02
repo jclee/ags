@@ -64,7 +64,7 @@ FLOAT_RETURN_TYPE StringToFloat(const char *theString) {
 FLOAT_RETURN_TYPE Math_Cos(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = cos(value);
+    value = (float) cos(value);
 
     RETURN_FLOAT(value);
 }
@@ -72,7 +72,7 @@ FLOAT_RETURN_TYPE Math_Cos(SCRIPT_FLOAT(value)) {
 FLOAT_RETURN_TYPE Math_Sin(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = sin(value);
+    value = (float) sin(value);
 
     RETURN_FLOAT(value);
 }
@@ -80,7 +80,7 @@ FLOAT_RETURN_TYPE Math_Sin(SCRIPT_FLOAT(value)) {
 FLOAT_RETURN_TYPE Math_Tan(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = tan(value);
+    value = (float) tan(value);
 
     RETURN_FLOAT(value);
 }
@@ -88,7 +88,7 @@ FLOAT_RETURN_TYPE Math_Tan(SCRIPT_FLOAT(value)) {
 FLOAT_RETURN_TYPE Math_ArcCos(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = acos(value);
+    value = (float) acos(value);
 
     RETURN_FLOAT(value);
 }
@@ -96,7 +96,7 @@ FLOAT_RETURN_TYPE Math_ArcCos(SCRIPT_FLOAT(value)) {
 FLOAT_RETURN_TYPE Math_ArcSin(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = asin(value);
+    value = (float) asin(value);
 
     RETURN_FLOAT(value);
 }
@@ -104,7 +104,7 @@ FLOAT_RETURN_TYPE Math_ArcSin(SCRIPT_FLOAT(value)) {
 FLOAT_RETURN_TYPE Math_ArcTan(SCRIPT_FLOAT(value)) {
     INIT_SCRIPT_FLOAT(value);
 
-    value = atan(value);
+    value = (float) atan(value);
 
     RETURN_FLOAT(value);
 }
@@ -113,7 +113,7 @@ FLOAT_RETURN_TYPE Math_ArcTan2(SCRIPT_FLOAT(yval), SCRIPT_FLOAT(xval)) {
     INIT_SCRIPT_FLOAT(yval);
     INIT_SCRIPT_FLOAT(xval);
 
-    float value = atan2(yval, xval);
+    float value = (float) atan2(yval, xval);
 
     RETURN_FLOAT(value);
 }
@@ -121,7 +121,7 @@ FLOAT_RETURN_TYPE Math_ArcTan2(SCRIPT_FLOAT(yval), SCRIPT_FLOAT(xval)) {
 FLOAT_RETURN_TYPE Math_Log(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = log(num);
+    float value = (float) log(num);
 
     RETURN_FLOAT(value);
 }
@@ -129,7 +129,7 @@ FLOAT_RETURN_TYPE Math_Log(SCRIPT_FLOAT(num)) {
 FLOAT_RETURN_TYPE Math_Log10(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = ::log10(num);
+    float value = (float) ::log10(num);
 
     RETURN_FLOAT(value);
 }
@@ -137,7 +137,7 @@ FLOAT_RETURN_TYPE Math_Log10(SCRIPT_FLOAT(num)) {
 FLOAT_RETURN_TYPE Math_Exp(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = exp(num);
+    float value = (float) exp(num);
 
     RETURN_FLOAT(value);
 }
@@ -145,7 +145,7 @@ FLOAT_RETURN_TYPE Math_Exp(SCRIPT_FLOAT(num)) {
 FLOAT_RETURN_TYPE Math_Cosh(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = cosh(num);
+    float value = (float) cosh(num);
 
     RETURN_FLOAT(value);
 }
@@ -153,7 +153,7 @@ FLOAT_RETURN_TYPE Math_Cosh(SCRIPT_FLOAT(num)) {
 FLOAT_RETURN_TYPE Math_Sinh(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = sinh(num);
+    float value = (float) sinh(num);
 
     RETURN_FLOAT(value);
 }
@@ -161,7 +161,7 @@ FLOAT_RETURN_TYPE Math_Sinh(SCRIPT_FLOAT(num)) {
 FLOAT_RETURN_TYPE Math_Tanh(SCRIPT_FLOAT(num)) {
     INIT_SCRIPT_FLOAT(num);
 
-    float value = tanh(num);
+    float value = (float) tanh(num);
 
     RETURN_FLOAT(value);
 }
@@ -170,7 +170,7 @@ FLOAT_RETURN_TYPE Math_RaiseToPower(SCRIPT_FLOAT(base), SCRIPT_FLOAT(exp)) {
     INIT_SCRIPT_FLOAT(base);
     INIT_SCRIPT_FLOAT(exp);
 
-    float value = ::pow(base, exp);
+    float value = (float) ::pow(base, exp);
 
     RETURN_FLOAT(value);
 }
@@ -203,7 +203,7 @@ FLOAT_RETURN_TYPE Math_Sqrt(SCRIPT_FLOAT(value)) {
     if (value < 0.0)
         quit("!Sqrt: cannot perform square root of negative number");
 
-    value = ::sqrt(value);
+    value = (float) ::sqrt(value);
 
     RETURN_FLOAT(value);
 }

@@ -932,17 +932,17 @@ void D3DGraphicsDriver::InitializeD3DState()
   OutputDebugString("AGS -- InitializeD3DState()");
 
   D3DMATRIX matOrtho = {
-    (2.0 / (float)_newmode_width), 0.0, 0.0, 0.0,
-    0.0, (2.0 / (float)_newmode_height), 0.0, 0.0,
-    0.0, 0.0, 0.0, 0.0,
-    0.0, 0.0, 0.0, 1.0
+    (2.0f / (float)_newmode_width), 0.0f, 0.0f, 0.0f,
+    0.0f, (2.0f / (float)_newmode_height), 0.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f
   };
 
   D3DMATRIX matIdentity = {
-    1.0, 0.0, 0.0, 0.0,
-    0.0, 1.0, 0.0, 0.0,
-    0.0, 0.0, 1.0, 0.0,
-    0.0, 0.0, 0.0, 1.0
+    1.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 1.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f
   };
 
   direct3ddevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_RGBA(30, 0, 0, 255), 0.5f, 0);

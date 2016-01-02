@@ -19,7 +19,7 @@
 
 ScriptDateTime* DateTime_Now_Core() {
     ScriptDateTime *sdt = new ScriptDateTime();
-    sdt->rawUnixTime = time(NULL);
+    sdt->rawUnixTime = (int) time(NULL);
 
     platform->GetSystemTime(sdt);
 

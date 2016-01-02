@@ -481,8 +481,8 @@ static void it_filter(DUMB_CLICK_REMOVER *cr, IT_FILTER_STATE *state, sample_t *
 			}
 			*dst++ += csi;
 		}
-		currsample = csi;
-		prevsample = psi;
+		currsample = (float) csi;
+		prevsample = (float) psi;
 	}
 #else
 	{
@@ -2968,10 +2968,10 @@ static void render(DUMB_IT_SIGRENDERER *sigrenderer, float volume, float delta, 
 				size_rendered = render_playing(sigrenderer, playing, to_mix[i].volume, note_delta, 0, size, samples_to_filter, 1, &left_to_mix);
 				sigrenderer->click_remover = cr;
 				it_filter(cr ? cr[0] : NULL, &playing->filter_state[0], samples[0], pos, samples_to_filter[0], size_rendered,
-					65536.0f/delta, playing->true_filter_cutoff, playing->true_filter_resonance);
+					(int)(65536.0f/delta), playing->true_filter_cutoff, playing->true_filter_resonance);
 				if (sigrenderer->n_channels == 2)
 					it_filter(cr ? cr[1] : NULL, &playing->filter_state[1], samples[1], pos, samples_to_filter[1], size_rendered,
-						65536.0f/delta, playing->true_filter_cutoff, playing->true_filter_resonance);
+						(int)(65536.0f/delta), playing->true_filter_cutoff, playing->true_filter_resonance);
 				// warning: filtering is not prevented by low left_to_mix!
 			}
 		} else {
