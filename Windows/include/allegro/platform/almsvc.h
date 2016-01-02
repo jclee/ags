@@ -36,8 +36,8 @@
 
 #define ALLEGRO_WINDOWS
 #define ALLEGRO_I386
+#define ALLEGRO_HAVE_STDINT_H
 #define ALLEGRO_LITTLE_ENDIAN
-#define ALLEGRO_GUESS_INTTYPES_OK
 #define ALLEGRO_MULTITHREADED
 
 #ifdef ALLEGRO_USE_CONSOLE
@@ -76,8 +76,6 @@
 #define INLINE       __inline
 
 #define LONG_LONG    __int64
-#define int64_t      signed __int64
-#define uint64_t     unsigned __int64
 
 #define AL_CONST     const
 
