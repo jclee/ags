@@ -978,6 +978,9 @@
     <ClCompile Include="..\..\Engine\libsrc\libcda-0.5\windows.c">
       <Filter>Library Sources\libcda</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Engine\libsrc\allegro-4.2.2-agspatch\win\wdsound.c">
+      <Filter>Library Sources\AllegroPatches</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Engine\ac\audiochannel.h">
@@ -1807,37 +1810,5 @@
     <ResourceCompile Include="..\..\Engine\resource\version.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\Windows\lib\alfont_mt.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\alleg_s_crt.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\ddraw.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\dinput.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\dsound.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\dxguid.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\ogg_static.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\theora_static.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\vorbis_static.lib">
-      <Filter>Libraries</Filter>
-    </Library>
-    <Library Include="..\..\Windows\lib\vorbisfile_static.lib">
-      <Filter>Libraries</Filter>
-    </Library>
   </ItemGroup>
 </Project>
