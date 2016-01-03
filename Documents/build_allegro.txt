@@ -1,0 +1,34 @@
+How to build Allegro 4.2.2 on Visual Studio 2015:
+
+- Download and install the DirectX SDK:
+  https://www.microsoft.com/en-us/download/details.aspx?id=6812
+  File name: DXSDK_Jun10.exe
+  Size: 599452800
+  MD5: a7fa610b1791d873162b9e33007a6777
+
+  When complete, you can open a new command prompt and verify that the SDK
+  environment variable is set correctly:
+
+  echo %DXSDK_DIR%
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\
+
+- Download and unzip Allegro 4.2.2 sources:
+  http://download.gna.org/allegro/allegro/4.2.2/all422.zip
+
+- Update DirectInput references to DirectInput8 using the patch in
+  update_directinput8.patch.
+
+  patch -p1 < ../ags/Documents/update_directinput8.patch
+
+- From the allegro/build directory, run pre-build-msvc.bat.
+
+- Open the allegro/build/msvc8/Allegro.sln solution in VS2015.  Click OK when
+  prompted to upgrade the solution.
+
+- Select Build | Batch Build.  In the dialog that pops up, check the checkboxes
+  in the Build column for the "Static Debug" and "Static Release" rows, then
+  click the Build button.
+
+- When completed, alld_s.lib and alleg_s.lib will be present in
+  allegro/lib/msvc
+

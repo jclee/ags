@@ -1,0 +1,181 @@
+From 323617dc0004403156cee7b5d44e1c2d6a0e9d05 Mon Sep 17 00:00:00 2001
+From: Joe Lee <joe@jotaro.com>
+Date: Sun, 3 Jan 2016 12:38:10 -0800
+Subject: [PATCH] Update DirectInput -> DirectInput8
+
+---
+ src/win/wdxver.c | 18 +++++++++---------
+ src/win/wjoydx.c |  7 ++++---
+ src/win/wkeybd.c |  5 +++--
+ src/win/wmouse.c |  5 +++--
+ 4 files changed, 19 insertions(+), 16 deletions(-)
+
+diff --git a/src/win/wdxver.c b/src/win/wdxver.c
+index c5d5cdc..51e1698 100644
+--- a/src/win/wdxver.c
++++ b/src/win/wdxver.c
+@@ -30,7 +30,7 @@
+ #include "allegro/platform/aintwin.h"
+ 
+ /* needed by the SDK version 8 with MSVC 5 (SP3) */
+-#define DIRECTINPUT_VERSION 0x300
++#define DIRECTINPUT_VERSION 0x800
+ 
+ #ifndef SCAN_DEPEND
+    #include <ddraw.h>
+@@ -43,7 +43,7 @@
+ 
+ 
+ typedef HRESULT(WINAPI *DIRECTDRAWCREATE) (GUID *, LPDIRECTDRAW *, IUnknown *);
+-typedef HRESULT(WINAPI *DIRECTINPUTCREATE) (HINSTANCE, DWORD, LPDIRECTINPUT *, IUnknown *);
++typedef HRESULT(WINAPI *DIRECTINPUT8CREATE) (HINSTANCE, DWORD, REFIID, LPDIRECTINPUT *, IUnknown *);
+ typedef HRESULT(WINAPI *DSETUPCREATE)(DWORD*,DWORD*);
+ 
+ 
+@@ -68,7 +68,7 @@ int get_dx_ver(void)
+    LPDIRECTDRAW directdraw = NULL;
+    LPDIRECTDRAW2 directdraw2 = NULL;
+    DIRECTDRAWCREATE DirectDrawCreate = NULL;
+-   DIRECTINPUTCREATE DirectInputCreate = NULL;
++   DIRECTINPUT8CREATE DirectInput8Create = NULL;
+    DSETUPCREATE DSetupCreate = NULL;
+    OSVERSIONINFO os_version;
+    LPDIRECTDRAWSURFACE ddraw_surf = NULL;
+@@ -178,10 +178,10 @@ int get_dx_ver(void)
+             return dx_version;
+          }
+ 
+-         DirectInputCreate = (DIRECTINPUTCREATE) GetProcAddress(dinput_hinst, "DirectInputCreateA");
++         DirectInput8Create = (DIRECTINPUT8CREATE) GetProcAddress(dinput_hinst, "DirectInput8Create");
+          FreeLibrary(dinput_hinst);
+ 
+-         if (!DirectInputCreate) {
++         if (!DirectInput8Create) {
+             /* no DInput... must DX2 on NT 4 pre-SP3 */
+             return dx_version;
+          }
+@@ -236,21 +236,21 @@ int get_dx_ver(void)
+    dx_version = 0x200;
+ 
+    /* see if we can create the DirectInput object */
+-   dinput_hinst = LoadLibrary("DINPUT.DLL");
++   dinput_hinst = LoadLibrary("DINPUT8.DLL");
+    if (!dinput_hinst) {
+       /* no DInput... must be DX2 */
+       goto End;
+    }
+ 
+-   DirectInputCreate = (DIRECTINPUTCREATE) GetProcAddress(dinput_hinst, "DirectInputCreateA");
++   DirectInput8Create = (DIRECTINPUT8CREATE) GetProcAddress(dinput_hinst, "DirectInput8Create");
+    FreeLibrary(dinput_hinst);
+ 
+-   if (!DirectInputCreate) {
++   if (!DirectInput8Create) {
+       /* no DInput... must be DX2 */
+       goto End;
+    }
+ 
+-   /* DirectInputCreate exists; that's enough to tell us that we are at least DX3 */
++   /* DirectInput8Create exists; that's enough to tell us that we are at least DX3 */
+    dx_version = 0x300;
+ 
+    /* we can tell if DX5 is present by checking for the existence of IDirectDrawSurface3;
+diff --git a/src/win/wjoydx.c b/src/win/wjoydx.c
+index 5487ec2..e48fca2 100644
+--- a/src/win/wjoydx.c
++++ b/src/win/wjoydx.c
+@@ -19,7 +19,7 @@
+  */
+ 
+ 
+-#define DIRECTINPUT_VERSION 0x0500
++#define DIRECTINPUT_VERSION 0x0800
+ 
+ #include "allegro.h"
+ #include "allegro/internal/aintern.h"
+@@ -31,6 +31,7 @@
+    #endif
+ 
+    #include <mmsystem.h>
++   #include <initguid.h>
+    #include <dinput.h>
+ #endif
+ 
+@@ -438,12 +439,12 @@ static int joystick_dinput_init(void)
+       return -1;
+ 
+    /* get the DirectInput interface */
+-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &joystick_dinput, NULL);
++   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8, &joystick_dinput, NULL);
+    if (FAILED(hr))
+       return -1;
+ 
+    /* enumerate the joysticks attached to the system */
+-   hr = IDirectInput_EnumDevices(joystick_dinput, DIDEVTYPE_JOYSTICK, joystick_enum_callback, NULL, DIEDFL_ATTACHEDONLY);
++   hr = IDirectInput_EnumDevices(joystick_dinput, DI8DEVTYPE_JOYSTICK, joystick_enum_callback, NULL, DIEDFL_ATTACHEDONLY);
+    if (FAILED(hr)) {
+       IDirectInput_Release(joystick_dinput);
+       return -1;
+diff --git a/src/win/wkeybd.c b/src/win/wkeybd.c
+index 8f12640..d052c46 100644
+--- a/src/win/wkeybd.c
++++ b/src/win/wkeybd.c
+@@ -16,7 +16,7 @@
+  */
+ 
+ 
+-#define DIRECTINPUT_VERSION 0x0300
++#define DIRECTINPUT_VERSION 0x0800
+ 
+ #include "allegro.h"
+ #include "allegro/internal/aintern.h"
+@@ -24,6 +24,7 @@
+ 
+ #ifndef SCAN_DEPEND
+    #include <process.h>
++   #include <initguid.h>
+    #include <dinput.h>
+ #endif
+ 
+@@ -689,7 +690,7 @@ static int key_dinput_init(void)
+    };
+ 
+    /* Get DirectInput interface */
+-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &key_dinput, NULL);
++   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8, &key_dinput, NULL);
+    if (FAILED(hr))
+       goto Error;
+ 
+diff --git a/src/win/wmouse.c b/src/win/wmouse.c
+index b56b983..8ba00cd 100644
+--- a/src/win/wmouse.c
++++ b/src/win/wmouse.c
+@@ -16,7 +16,7 @@
+  */
+ 
+ 
+-#define DIRECTINPUT_VERSION 0x0300
++#define DIRECTINPUT_VERSION 0x0800
+ 
+ #include "allegro.h"
+ #include "allegro/internal/aintern.h"
+@@ -24,6 +24,7 @@
+ 
+ #ifndef SCAN_DEPEND
+    #include <process.h>
++   #include <initguid.h>
+    #include <dinput.h>
+ #endif
+ 
+@@ -606,7 +607,7 @@ static int mouse_dinput_init(void)
+    };
+ 
+    /* Get DirectInput interface */
+-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &mouse_dinput, NULL);
++   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8, &mouse_dinput, NULL);
+    if (FAILED(hr))
+       goto Error;
+ 
+-- 
+1.8.3.msysgit.0
+
