@@ -17,6 +17,10 @@
 common.a
 ags
 
+# Data written during execution
+/Solutions/Engine.App/allegro.log
+/Solutions/Engine.App/test.ini
+
 # Platform-specific build artifacts
 /Editor/AGS.CScript.Compiler/bin
 /Editor/AGS.CScript.Compiler/obj
