@@ -19,7 +19,7 @@
  */
 
 
-#define DIRECTINPUT_VERSION 0x0300
+#define DIRECTINPUT_VERSION 0x0800
 
 #include "allegro.h"
 #include "allegro/internal/aintern.h"
@@ -27,6 +27,7 @@
 
 #ifndef SCAN_DEPEND
    #include <process.h>
+   #include <initguid.h>
    #include <dinput.h>
 #endif
 
@@ -706,7 +707,7 @@ static int key_dinput_init(void)
    };
 
    /* Get DirectInput interface */
-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &key_dinput, NULL);
+   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8, &key_dinput, NULL);
    if (FAILED(hr))
       goto Error;
 
