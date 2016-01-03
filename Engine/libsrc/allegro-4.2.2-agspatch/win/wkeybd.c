@@ -13,9 +13,6 @@
  *      By Stefan Schimanski, hacked up by Peter Wang and Elias Pschernig.
  *
  *      See readme.txt for copyright information.
- *
- ****** CJ CHANGE SIN THIS FILE: Made hw_to_mycode non-static;
-                               changed key_dinput_handle_scancode to ignore windows key on Vista
  */
 
 
@@ -325,26 +322,11 @@ static void key_dinput_handle_scancode(unsigned char scancode, int pressed)
 {
    HWND allegro_wnd = win_get_window();
    static int ignore_three_finger_flag = FALSE;
-   static BOOL just_pressed_alt = FALSE;
-
-   if (scancode == DIK_LMENU)
-   {
-     just_pressed_alt = TRUE;
-   }
-   else if (scancode != DIK_TAB)
-   {
-     just_pressed_alt = FALSE;
-   }
-
    /* ignore special Windows keys (alt+tab, alt+space, (ctrl|alt)+esc) */
    if (((scancode == DIK_TAB) && (_key_shifts & KB_ALT_FLAG))
        || ((scancode == DIK_SPACE) && (_key_shifts & KB_ALT_FLAG))
-       || ((scancode == DIK_ESCAPE) && (_key_shifts & (KB_CTRL_FLAG | KB_ALT_FLAG)))
-       || ((scancode == DIK_TAB) && (just_pressed_alt)))
-   {
-     just_pressed_alt = FALSE;
-     return;
-   }
+       || ((scancode == DIK_ESCAPE) && (_key_shifts & (KB_CTRL_FLAG | KB_ALT_FLAG))))
+      return;
 
    /* alt+F4 triggers a WM_CLOSE under Windows */
    if ((scancode == DIK_F4) && (_key_shifts & KB_ALT_FLAG)) {
@@ -389,6 +371,7 @@ static void key_dinput_handle_scancode(unsigned char scancode, int pressed)
          handle_key_release(scancode);
    }
 }
+
 
 
 /* key_dinput_handle: [input thread]
