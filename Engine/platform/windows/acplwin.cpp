@@ -71,6 +71,11 @@ typedef struct BMP_EXTRA_INFO {
    int lock_nesting;
 } BMP_EXTRA_INFO;
 
+// Workaround for linker error caused by old alfont library build.
+// Probably can be removed once alfont is recompiled.
+// http://stackoverflow.com/questions/15165871/upgrading-vc-project-from-vs-2008-to-vs-2010
+extern "C" int _forceCRTManifestCUR = 0;
+
 // from Allegro DDraw driver
 extern "C" extern LPDIRECTDRAW2 directdraw;
 extern "C" extern LPDIRECTSOUND directsound;
