@@ -21,12 +21,6 @@
 //
 //=============================================================================
 
-#if defined (WINDOWS_VERSION)
-#include <dos.h>
-#include <conio.h>
-#include <process.h>
-#endif
-
 #include <stdio.h>
 
 #include "util/wgt2allg.h"
